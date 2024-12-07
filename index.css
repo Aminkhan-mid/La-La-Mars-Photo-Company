@@ -382,8 +382,7 @@ footer{
     color: #f1faee;
     padding: 6px;
     font-size: 1.4rem;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
+    margin-top: 50px;
 }
 footer a{
     color: #f1faee;
@@ -399,17 +398,20 @@ footer a:hover{
         text-align: center;
     }
     header .logo{
-        margin:10px auto;
         width: 65px;
         height: 65px;
     }
     header h1{
-        margin: 0;
-        font-size: 1.8em;
+        margin: 10;
+        font-size: 1.4rem;
     }
     header i{
         margin: 10px;
         font-size: 2rem;
+    }
+    .logoTitle{
+        display: flex;
+        justify-content: space-around;
     }
  
 }
@@ -426,4 +428,5 @@ footer a:hover{
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin: 10px 0;
 }
