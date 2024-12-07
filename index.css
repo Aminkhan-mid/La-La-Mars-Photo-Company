@@ -27,10 +27,7 @@ header i{
     margin: 35px 40px 0px 0px;
     color: black;
 }
-.photosContainer{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
+
 .photoTab{
     background-color:#9bd3d0;
     width: 360px;
@@ -396,9 +393,6 @@ footer a:hover{
 }
 
 @media(max-width:763px){
-    body{
-        background-color: #fec447;
-    }
     header{
         display: flex;
         flex-direction: column;
@@ -417,4 +411,19 @@ footer a:hover{
         margin: 10px;
         font-size: 2rem;
     }
+ 
+}
+
+.photosContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.photosla{
+    justify-content: center;
+    flex:1 1 500px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
