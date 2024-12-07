@@ -394,3 +394,24 @@ footer a{
 footer a:hover{
     color:red;
 }
+
+@media(max-width:763px){
+    body{
+        background-color: #fec447;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1{
+        margin: 0;
+        font-size: 2em;
+    }
+    header .logo{
+        margin:10px auto;
+    }
+    header i{
+        margin: 10px;
+    }
+}
