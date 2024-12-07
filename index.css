@@ -382,7 +382,7 @@ footer{
     color: #f1faee;
     padding: 6px;
     font-size: 1.4rem;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 footer a{
     color: #f1faee;
@@ -400,14 +400,19 @@ footer a:hover{
     header .logo{
         width: 65px;
         height: 65px;
+        margin: 10 0 ;
     }
     header h1{
-        margin: 10;
+        margin: 10 30px 10 0;
         font-size: 1.4rem;
     }
     header i{
         margin: 10px;
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-evenly;
     }
     .logoTitle{
         display: flex;
