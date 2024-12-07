@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La La Mars Photos</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <h1>La La Mars Photo Company</h1>
+        <div>
+            <i class="fa-solid fa-boxes-stacked" id="wishlistIcon"></i>
+            <i class="fa-solid fa-cart-shopping" id="cartIcon"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="photosContainer" id="photosContainer"></section>
+
+        <section class="wishtlistContainer" id="wishtlistContainer">
+                <i class="fa-solid fa-xmark" id="closeWishlistContainer"></i>
+                <div class="wishlisted" id="wishlisted"></div>
+        </section>
+
+        <section class="cartModul" id="cartFeed">
+            <i class="fa-solid fa-circle-xmark" id="closeCartBtn"></i>
+            <div class="cartFeed" id="cartFeedData"></div>
+        </section>
+
+        <section class="paymentModul" id="paymentModul"></section>
+
+        <section class="orderComplete"  id="orderComplete"></section>
+        
+    </main>
+
+    <footer>
+        <p>&copy;2024 Designed by <a target="_blank" href="https://github.com/Aminkhan-mid">Amin Khan</a></p>
+    </footer>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

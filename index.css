@@ -1,0 +1,396 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:  #fecbb6;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #faf3e1;
+}
+header .logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(./images/humanKing.jpeg);
+    background-size: cover;
+    margin: 20px;
+}
+header h1{
+    margin-top: 35px;
+}
+header i{
+    font-size: 3rem;
+    cursor: pointer;
+    margin: 35px 40px 0px 0px;
+    color: black;
+}
+.photosContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.photoTab{
+    background-color:#9bd3d0;
+    width: 360px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+.photoTab:hover{
+    box-shadow: 0px 0px 30px black;
+}
+.photoTab h1{
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+    background-color: #fec447;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.flexOne{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flexTwo{
+    display: flex;
+    gap: 20px;
+}
+.photoTab img{
+    width: 280px;
+    border-radius:8px;
+    cursor: pointer;
+}
+i{
+    font-size: 2.5rem;
+    color: gray;
+    margin: 15px 0px 0px 0px;
+    cursor: pointer;
+}
+.price{
+    background-color: #a7c957;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: ghostwhite;
+    text-shadow: 0px 0px 4px black;
+    font-size: 2rem;
+    margin: 10px 0px 0px 0px;
+}
+.liked{
+    color: red;
+    text-shadow: 0px 0px 10px;
+}
+.cart{
+    color: yellow;
+    text-shadow: 0px 0px 10px black;
+}
+.backShadow{
+    box-shadow: 0px 0px 10px black;
+    background-color: greenyellow;
+}
+.wishtlistContainer{
+    background: linear-gradient(80deg, #faf3e1, #9bd3d0);
+    width: 1100px;
+    height: 100vh;
+    position: absolute;
+    top:10px;
+    margin: auto 70px;
+    display: none;
+    overflow: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.wishtlistContainer i{
+    background-color: #faf3e1;
+    border-radius: 50%;
+    margin: auto;
+    padding: 10px 15px;
+    color: black;
+    box-shadow: 0px 0px 10px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.wishtlistContainer i:active{
+    box-shadow: 4px 4px 10px ;
+}
+
+.wishlisted{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.wishlistTab{
+    display: flex;
+    background-color: #fec447;
+    width: 400px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px;
+    transition: 0.3s;
+}
+.wishlistTab:hover{
+    box-shadow: 25px 25px 5px;
+    background-color: #eea300;
+}
+.wishlistTab img{
+    width: 150px;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.wishlistTab h1{
+    text-align: center;
+    margin: 90px 0px 0px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+.emptyWishlist{
+    background-color: #faf3e1;
+    border-radius: 13px;
+    text-align: center;
+    box-shadow: 0px 0px 40px black;
+    margin: 10px;
+    position: relative;
+    top: 100px;
+    left: 290px;
+}
+.emptyWishlist h2{
+    font-size: 3rem;
+    background-color:rgba(0, 0, 255, 0.187);
+    width: fit-content;
+    margin:20px auto;
+    padding: 8.5px 15px;
+    border-radius: 10px;
+    font-family: fantasy;
+}
+.emptyWishlist img{
+    width: 350px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px red;
+} 
+.cartModul{
+    width: 1100px;
+    height: 100vh;
+    background-color: #f4f1de;
+    border: 1px solid black;
+    position: absolute;
+    top:10px;
+    margin: auto 70px;
+    text-align: center;
+    overflow: auto;
+    display: none;
+}
+.cartFeed{
+    background-color: #eea300;
+    width: 800px;
+    margin:40px auto;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.flexThree{
+    display: flex;
+    justify-content: space-between;
+}
+.flexFour{
+    display: flex;
+    gap: 10px;
+}
+.cartImg{
+    width: 80px;
+    border-radius: 30px;
+    margin: 10px 0px 20px 0px;
+}
+.removeBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin:30px 0px 0px 0px;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px red;
+}
+.removeBtn:active{  
+    color: ghostwhite;
+}
+.imagePrice{
+    font-size: 2rem;
+    margin: 85px 0px 0px 0px;
+}
+.border{
+    border-bottom: 3px solid black;
+}
+.totalPriceTxt{
+    font-size: 3rem;
+    margin: 50px 0px 40px 0px;
+}
+.totalPriceNum{
+    font-size: 3rem;
+    margin: 50px 0px 40px 0px;
+}
+.placeOrder{
+    background-color: #a7c957;
+    border: 1px solid black;
+    width: 400px;
+    height: 70px;
+    font-size: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.placeOrder:active{
+    background-color: limegreen;
+}
+.emptyCartList{
+    background-color: #faf3e1;
+    border-radius: 13px;
+    text-align: center;
+    box-shadow: 0px 0px 40px black;
+    margin: 10px;
+    padding-top: 15px;
+}
+
+.emptyCartList img{
+    width: 350px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px red;
+} 
+
+.emptyCartList h2{
+    font-size: 3rem;
+    background-color:rgba(0, 0, 255, 0.187);
+    width: fit-content;
+    margin:20px auto;
+    padding: 8.5px 15px;
+    border-radius: 10px;
+    font-family: fantasy;
+}
+
+.paymentModul{
+    background-color: #f4f1de;
+    border: 1px solid black;
+    width: 800px;
+    height: 450px;
+    font-family:sans-serif;
+    margin:20px auto;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0px 0px 50px black;
+    position: absolute;
+    top: 90px;
+    right: 250px;
+    display: none;
+}
+.paymentModul h1{
+    background-color: #fecbb6;
+    padding: 10px;
+    width: fit-content;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px red;
+}
+input{
+    background-color: ghostwhite;
+    border: none;
+    width: 290px;
+    height: 60px;
+    box-shadow: 0px 0px 3px;
+    border-radius:20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 10px #383735;
+}
+.payBtn{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #9bd3d0;
+    color: ghostwhite;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px black;
+    box-shadow: 0px 0px 10px #245351;
+    cursor: pointer;
+}
+
+.orderComplete{
+    background:linear-gradient(30deg,#606c38, #383735);
+    color: #fefae0;
+    width: 700px;
+    height: fit-content;
+    font-size: 2rem;
+    margin: 40px auto;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: fantasy;
+    font-weight: bolder;
+    box-shadow: 0px 0px 50px #283618;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 15px;
+    right: 250px;
+    display: none;
+}
+.orderComplete i{
+    color: #f4f1de;
+    font-size: 4rem;
+}
+.orderComplete h1{
+    background-color: #eea300;
+    padding: 10px 20px 0px 20px;
+    border-radius: 15px;
+    width: fit-content;
+    margin:30px auto;
+}
+.orderComplete h4{
+    background-color: #a7c957;
+    color: black;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.orderComplete h2{
+    color: black;
+    text-shadow: 0px 0px 10px #faf3e1;
+    background-color: orangered;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.orderComplete h3{
+    background-color: #fecbb6;
+    color: #383735;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+footer{
+    text-align: center;
+    background-color: #121212;
+    color: #f1faee;
+    padding: 6px;
+    font-size: 1.4rem;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+footer a{
+    color: #f1faee;
+}
+footer a:hover{
+    color:red;
+}
